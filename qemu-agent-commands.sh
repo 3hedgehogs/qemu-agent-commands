@@ -42,7 +42,7 @@ main() {
     COMMAND_ARGS=("$@")
 
     if [[ -z "$QEMU_VM" ]]; then
-        echo "Must specify -q <virtual host name>" >&2
+        echo "Must specify -m <virtual host name>" >&2
         usage >&2
         exit 1
     fi
